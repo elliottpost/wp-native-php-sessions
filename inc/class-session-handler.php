@@ -19,11 +19,12 @@ class Session_Handler implements \SessionHandlerInterface {
 	/**
 	 * Closes the session.
 	 *
-	 * @param string $save_path    Path to where the session is to be stored.
-	 * @param string $session_name Name of the session.
+	 * @param string $path    Path to where the session is to be stored.
+	 * @param string $name Name of the session.
 	 * @return boolean
 	 */
-	public function open( $save_path, $session_name ) {
+	public function open( string $path, string $name ): bool 
+	{
 		return true;
 	}
 
